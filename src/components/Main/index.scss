@@ -1,0 +1,81 @@
+.hero {
+  padding: 80px 30px;
+}
+.hero__inner {
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: url(./../../assets/pizza.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cooking__process {
+  position: relative;
+  width: 270px;
+}
+.icon-play {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 2;
+}
+.elipsis {
+  position: absolute;
+  z-index: 1;
+  top: 33%;
+  left: 34%;
+}
+.hero__title {
+  color: #fff;
+  font-size: 69.17px;
+  font-weight: 800;
+  line-height: 109.5%; /* 75.741px */
+}
+.hero__left--text {
+  margin: 30px 0px;
+  width: 500px;
+  color: #a3a3a3;
+  font-size: 19.562px;
+  font-weight: 400;
+}
+.process_title {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+.modal{
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+}
+.hero__right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  background: url(../../../public//images/menu.png);
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+}
+.pizza {
+  top: -40px;
+  z-index: 2;
+  left: 510px;
+  position: absolute;
+}
+
+.fries {
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+  z-index: 2;
+}
