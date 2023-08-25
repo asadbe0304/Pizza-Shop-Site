@@ -1,6 +1,5 @@
 import Category from "./Category";
 import MenuCard from "./MenuCard";
-
 import "./index.scss";
 
 const index = () => {
