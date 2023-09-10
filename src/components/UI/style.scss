@@ -19,7 +19,7 @@
   position: relative;
   width: 24%;
   padding: 20px 25px;
-  border-radius: 29.531px;
+  border-radius: 20px;
   background: #210a01;
   .card__head {
     img {
@@ -31,6 +31,13 @@
   .card__body {
     margin-top: 100px;
   }
+}
+.card__text {
+  margin: 20px 0px;
+  color: #a3a3a3;
+  font-size: 14.32px;
+  font-weight: 400;
+  line-height: 109.5%; /* 15.68px */
 }
 // ::-webkit-scrollbar {
 //   width: 0px;
