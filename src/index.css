@@ -113,8 +113,12 @@ body {
   /* background-repeat: no-repeat; */
   background-size: cover;
   background: #000;
-  /* overflow-x: hidden; */
-  /* background: url(./assets/pizza.png); */
+  overflow-x: hidden;
+  /* background: url("./../public/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 .container {
   margin: 0 auto;

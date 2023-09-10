@@ -12,7 +12,7 @@ const index = () => {
           </h3>
           <Category />
         </div>
-        <div className="menu_product flex items-center justify-between flex-wrap gap-3 pt-20">
+        <div className="menu_product flex items-center justify-between flex-wrap gap-2 pt-20">
           <MenuCard />
         </div>
       </div>

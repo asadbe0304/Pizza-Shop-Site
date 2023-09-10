@@ -15,19 +15,20 @@
   background-image: linear-gradient(315deg, #ea202777 0%, #ee5a24a4 74%);
 }
 .card {
+  margin-top: 100px;
   position: relative;
-  width: 297px;
+  width: 24%;
   padding: 20px 25px;
   border-radius: 29.531px;
   background: #210a01;
-  .card__head{
-    img{
+  .card__head {
+    img {
       position: absolute;
-      top: -80px;
-      left: 43px;
+      top: -50px;
+      left: 75px;
     }
   }
-  .card__body{
+  .card__body {
     margin-top: 100px;
   }
 }
