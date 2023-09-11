@@ -14,6 +14,24 @@
   background-color: #ea2027ad;
   background-image: linear-gradient(315deg, #ea202777 0%, #ee5a24a4 74%);
 }
+.outbutton {
+  padding: 9px 56px 11px 56px;
+  color: #fff;
+  font-size: 17.74px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109.5%;
+  border: 1px solid #fff; /* 19.425px */
+  border-radius: 700px 675px 700px 700px;
+  // background-color: #ea2027;
+  // background-image: linear-gradient(315deg, #ea2027 0%, #ee5a24 74%);
+  transition: all ease-in-out 0.5s;
+}
+.outbutton:hover {
+  border: 1px solid #ea2027;
+  background-color: #ea2027ad;
+  background-image: linear-gradient(315deg, #ea202777 0%, #ee5a24a4 74%);
+}
 .card {
   margin-top: 100px;
   position: relative;

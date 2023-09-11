@@ -15,7 +15,7 @@ const Card = () => {
       <div className="card__footer flex items-center flex-col w-full">
         <div className="flex items-center justify-between w-full ">
           <strong className="text-white">
-            8,35 <sup>$</sup>{" "}
+            8,35 <sup>$</sup>
           </strong>
           <div className="flex items-center justify-between gap-1">
             <button className="minus rounded-full flex items-center justify-center bg-orange-500 text-white px-2 py-0 border">

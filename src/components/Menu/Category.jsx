@@ -1,4 +1,4 @@
-import Btn from "./../UI/Button";
+import Btn from "./../UI/OutButton";
 
 const Category = () => {
   const db = [

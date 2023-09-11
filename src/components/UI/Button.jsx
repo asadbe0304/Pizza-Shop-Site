@@ -1,8 +1,10 @@
 import "./style.scss";
-const Button = ({ text, style }) => {
+const Button = ({ text, style, click, }) => {
   return (
     <>
-      <button className={`button  ${style}`}>{text}</button>
+      <button onClick={click} className={`button  ${style}`}>
+        {text}
+      </button>
     </>
   );
 };

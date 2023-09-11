@@ -3,6 +3,7 @@ const initialState = {
   isLoading: false,
   loggedIn: false,
   modal: false,
+  close: false,
   error: null,
   user: null,
 };
@@ -28,7 +29,10 @@ export const authSlice = createSlice({
       (state.isLoading = false), (state.error = "erorr");
     },
     modalOpen: (state) => {
-      state.modal = !false;
+      state.modal = true;
+    },
+    modalClose: (state) => {
+      state.modal = false;
     },
   },
 });
@@ -39,5 +43,6 @@ export const {
   registerUserSuccess,
   registerUserFailure,
   modalOpen,
+  modalClose,
 } = authSlice.actions;
 export default authSlice.reducer;

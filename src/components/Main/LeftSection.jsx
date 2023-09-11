@@ -4,6 +4,7 @@ import Svg2 from "./../../../public/images/elip.svg";
 import Img1 from "./../../../src/assets/laugh-wink.png";
 import Img2 from "./../../../src/assets/love.png";
 import Button from "../UI/Button";
+import BTN from "../UI/OutButton";
 import { useDispatch } from "react-redux";
 import { modalOpen } from "../../slice/auth";
 const LeftSection = () => {
@@ -55,6 +56,7 @@ const LeftSection = () => {
         </div>
         <div className="btn_gruop">
           <Button text={"To Order"}></Button>
+          <BTN text={"Order"}></BTN>
         </div>
       </div>
     </>
