@@ -1,7 +1,19 @@
-.header{
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
   padding: 10px 30px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 3;
+  padding: 30px 0px;
+  animation: slideDown 0.35s ease-out;
+}
 .logo {
   font-weight: 900;
   font-style: italic;
@@ -15,4 +27,13 @@
   padding: 10px;
   border-radius: 50%;
   background-image: linear-gradient(315deg, #ea2027 0%, #ee5a24 74%);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
