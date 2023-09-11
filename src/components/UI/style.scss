@@ -33,21 +33,20 @@
   background-image: linear-gradient(315deg, #ea202777 0%, #ee5a24a4 74%);
 }
 .card {
-  margin-top: 100px;
-  position: relative;
-  width: 24%;
+  margin-top: 20px;
+  width: 280px;
   padding: 20px 25px;
   border-radius: 20px;
   background: #210a01;
-  .card__head {
-    img {
-      position: absolute;
-      top: -50px;
-      left: 75px;
-    }
-  }
+
   .card__body {
-    margin-top: 100px;
+    margin-top: 20px;
+  }
+  .card__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 .card__text {
@@ -60,3 +59,24 @@
 // ::-webkit-scrollbar {
 //   width: 0px;
 // }
+@media screen and (max-width: 1283px) {
+  .card {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 925px) {
+  .card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .card__head {
+    img {
+      width: 120px;
+    }
+  }
+  
+}
