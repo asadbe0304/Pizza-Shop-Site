@@ -1,11 +1,9 @@
-import { Header, Footer, Main } from "./../components";
+import { Main } from "./../components";
 
 const index = () => {
   return (
     <>
-      <Header />
       <Main />
-      <Footer />
     </>
   );
 };

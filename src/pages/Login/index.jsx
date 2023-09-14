@@ -2,7 +2,7 @@
 const index = () => {
   return (
     <>
-      Login
+    <h2 className="text-white">Login </h2>
     </>
   );
 };

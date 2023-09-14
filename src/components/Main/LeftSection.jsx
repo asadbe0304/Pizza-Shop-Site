@@ -34,6 +34,7 @@ const LeftSection = () => {
           <img
             src={Img}
             alt="Cooking process"
+            className="cooking__img"
             width={"272px"}
             height={"194px"}
           />

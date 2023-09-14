@@ -5,6 +5,26 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.menu_product{
+.menu_product {
   max-width: 1400px;
+}
+@media screen and (max-width:960px) {
+  .menu-title{
+    font-size: 48px;
+  }
+}
+@media screen and (max-width:660px) {
+  .menu-title{
+    font-size: 38px;
+  }
+}
+@media screen and (max-width:460px) {
+  .menu-title{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width:400px) {
+  .menu-title{
+    font-size: 28px;
+  }
 }

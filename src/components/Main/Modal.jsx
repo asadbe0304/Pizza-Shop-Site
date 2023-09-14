@@ -10,13 +10,14 @@ const Modal = () => {
   return (
     <>
       <div
-        className={`modal py-5 px-4 bg-white w-full h-full ${modal ? "flex flex-col" : "hidden"}`}
+        className={`modal py-5 px-4 bg-white w-full h-full ${modal ? "flex flex-col animating" : "display_none hidden"}`}
       >
         <div className="flex items-end">
           <Button text={"close"} click={close}  />
         </div>
         <div className="flex items-center justify-center w-full">
           <iframe
+            style={{margin:"40px 0px"}}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/RKWLu6UHryQ?si=cLV5mYuglyX0QR01"

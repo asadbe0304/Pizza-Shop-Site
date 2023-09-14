@@ -51,7 +51,7 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
-.modal{
+.modal {
   position: fixed;
   z-index: 4;
   left: 0;
@@ -78,4 +78,129 @@
   bottom: -50px;
   left: 100px;
   z-index: 2;
+}
+
+.animating {
+  animation: slideShow 0.35s ease-out;
+}
+.display_none {
+  animation: slideOut 0.3s ease-out;
+}
+@media screen and (max-width: 1050px) {
+  .hero__title {
+    font-size: 42px;
+  }
+  .hero__left--text {
+    font-size: 16px;
+  }
+  .hero {
+    padding: 60px 0 0 0;
+  }
+  .hero__right {
+    img {
+      width: 80%;
+    }
+    .fries {
+      width: 200px;
+      left: 0px;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero__title {
+    font-size: 36px;
+    line-height: 60px;
+    span {
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero__inner {
+    flex-direction: column-reverse;
+  }
+  .hero__left {
+    width: 100%;
+  }
+  .hero__right {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .fries {
+      top: 0;
+      left: -80px;
+      width: 300px;
+    }
+  }
+  .hero__title {
+    font-size: 68px;
+    line-height: 75px;
+  }
+  .hero__left--text {
+    width: 100%;
+    font-size: 22px;
+  }
+ 
+}
+
+@media screen and (max-width: 640px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .hero__left--text {
+    font-size: 14px;
+  }
+  .hero__right {
+    .fries {
+      width: 200px;
+      left: -80px;
+    }
+  }
+}
+@media screen and (max-width:420px) {
+  .hero__right {
+    .fries {
+      width: 150px;
+      left: -60px;
+    }
+  }
+  .hero__title{
+    font-size: 38px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width:350px) {
+  .hero__right {
+    .fries {
+      width: 120px;
+      left: -60px;
+    }
+  }
+  .hero__title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+ .cooking__img{
+  width: 90%;
+ }
+}
+@keyframes slideShow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
 }
