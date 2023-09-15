@@ -8,6 +8,21 @@
 .menu_product {
   max-width: 1400px;
 }
+.slick-prev{
+  display: none!important;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  color: azure;
+}
+.slick-next{
+  display: none!important;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  right: 0;
+  color: azure;
+}
 @media screen and (max-width:960px) {
   .menu-title{
     font-size: 48px;

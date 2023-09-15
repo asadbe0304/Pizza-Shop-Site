@@ -114,14 +114,17 @@ body {
   background-size: cover;
   background: #000;
   overflow-x: hidden;
+  /* background-image: url(./assets/burger.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position-x:300px; */
+  /* background-position-y: 250px; */
   /* background: url("./../public/images/bg.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed; */
 }
 .container {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
   max-width: 1440px;
 }
