@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import Button from "../UI/Button";
 import { MdClose } from "react-icons/md";
 import { modalClose } from "../../slice/auth";
 const Modal = () => {
