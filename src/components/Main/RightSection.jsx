@@ -1,6 +1,6 @@
-import Img from "./../../../public/images/pizzaa2.png";
+import Img from "./../../../public/images/pizzaa2.webp";
 import Img3 from "./../../../public/images/fris.png";
-import Img4 from "./../../assets/herobanner.png";
+import Img4 from "./../../assets/herobanner.webp";
 const RightSection = () => {
   return (
     <>

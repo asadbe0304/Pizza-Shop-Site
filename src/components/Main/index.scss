@@ -56,6 +56,8 @@
   z-index: 4;
   left: 0;
   top: 0;
+  background-color: #ffffff33;
+  backdrop-filter: blur(20px);
 }
 .hero__right {
   width: 50%;
@@ -86,7 +88,7 @@
 .display_none {
   animation: slideOut 0.3s ease-out;
 }
-.mobile-img{
+.mobile-img {
   display: none;
 }
 @media screen and (max-width: 1050px) {
@@ -124,10 +126,10 @@
   .hero__inner {
     flex-direction: column-reverse;
   }
-  .mobile-img{
+  .mobile-img {
     display: block;
   }
-  .desktop-img{
+  .desktop-img {
     display: none;
   }
   .hero__left {
@@ -152,7 +154,6 @@
     width: 100%;
     font-size: 22px;
   }
- 
 }
 
 @media screen and (max-width: 640px) {
@@ -170,32 +171,32 @@
     }
   }
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
   .hero__right {
     .fries {
       width: 150px;
       left: -60px;
     }
   }
-  .hero__title{
+  .hero__title {
     font-size: 38px;
     line-height: 45px;
   }
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width: 350px) {
   .hero__right {
     .fries {
       width: 120px;
       left: -60px;
     }
   }
-  .hero__title{
+  .hero__title {
     font-size: 32px;
     line-height: 40px;
   }
- .cooking__img{
-  width: 90%;
- }
+  .cooking__img {
+    width: 90%;
+  }
 }
 @keyframes slideShow {
   from {
