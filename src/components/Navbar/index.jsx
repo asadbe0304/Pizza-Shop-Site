@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./index.scss";
 import Button from "../UI/Button";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,17 +35,15 @@ const index = () => {
         </li>
         <li className="nav__item">
           <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              isActive ? " item__link" : "item__link"
-            }
+            to={"/about"}
+            className={({ isActive }) => (isActive ? "item__link" : "active")}
           >
             About
           </NavLink>
         </li>
         <li className="nav__item">
           <NavLink
-            to={"/"}
+            to={"/events"}
             className={({ isActive }) => (isActive ? "item__link" : "active")}
           >
             Events
@@ -53,16 +51,24 @@ const index = () => {
         </li>
         <li className="nav__item">
           <NavLink
-            to={"/"}
+            to={"/vacansy"}
             className={({ isActive }) => (isActive ? " item__link" : "active")}
           >
             Vacancy
           </NavLink>
         </li>
-        <li className="nav__item login_btn">
-          <NavLink to={"login"}>
-            <Button text={"Login"} />
+        <li className="nav__item">
+          <NavLink
+            to={"/locations"}
+            className={({ isActive }) => (isActive ? " item__link" : "active")}
+          >
+            Locations
           </NavLink>
+        </li>
+        <li className="nav__item login_btn">
+          <Link to={"login"}>
+            <Button text={"Login"} />
+          </Link>
         </li>
       </ul>
     </>

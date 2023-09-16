@@ -5,13 +5,16 @@ import Navbar from "./../Navbar";
 import { FiShoppingBag, FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { modalMenu } from "../../slice/auth";
+import { modalMenu, modalCart } from "../../slice/auth";
 import { useDispatch } from "react-redux";
 const index = () => {
   const [sticky, setSticky] = useState("");
   const dispatch = useDispatch();
   const open = () => {
     dispatch(modalMenu());
+  };
+  const show = () => {
+    dispatch(modalCart());
   };
 
   useEffect(() => {
@@ -36,13 +39,13 @@ const index = () => {
               <Link to={"/login"} className="header__login--btn">
                 <Btn text={"Login"} />
               </Link>
-              <Link className="order__cart--link hover:scale-110">
+              <div onClick={show} className="order__cart--link hover:scale-110">
                 <FiShoppingBag
                   width={"60px"}
                   height={"60px"}
                   className="text-white"
                 />
-              </Link>
+              </div>
               <div className="order__cart--link ham__menu" onClick={open}>
                 <FiMenu
                   width={"60px"}

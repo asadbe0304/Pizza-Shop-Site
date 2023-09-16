@@ -1,0 +1,22 @@
+.screen-cart {
+  position: fixed;
+  background-color: #ffffff81;
+  backdrop-filter: blur(20px);
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 55;
+}
+.btn {
+  width: 25px;
+  border: 1px solid #555;
+  border-radius: 50%;
+}
+.card__footer{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #fff;
+}

@@ -5,6 +5,7 @@ const initialState = {
   modal: false,
   close: false,
   menu: true,
+  cart: false,
   error: null,
   user: null,
 };
@@ -41,6 +42,12 @@ export const authSlice = createSlice({
     modalMenuClose: (state) => {
       state.menu = !false;
     },
+    modalCart: (state) => {
+      state.cart = true;
+    },
+    modalCartClose: (state) => {
+      state.cart = false;
+    },
   },
 });
 
@@ -53,5 +60,7 @@ export const {
   modalClose,
   modalMenu,
   modalMenuClose,
+  modalCart,
+  modalCartClose,
 } = authSlice.actions;
 export default authSlice.reducer;

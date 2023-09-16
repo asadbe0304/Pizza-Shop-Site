@@ -3,6 +3,7 @@ import Left from "./LeftSection";
 import Right from "./RightSection";
 import Menu from "./../Menu";
 import Modal from "./Modal";
+import Cart from "./../../pages/Cart";
 const index = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const index = () => {
               <Right />
             </div>
             <Menu />
+            <Cart />
           </div>
         </div>
       </main>
