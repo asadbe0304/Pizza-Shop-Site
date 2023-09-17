@@ -635,6 +635,14 @@ video {
   margin-top: 2rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -1351,6 +1359,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1380,6 +1392,10 @@ body {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .\32xl\:flex {
     display: flex;
   }
