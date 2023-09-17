@@ -71,12 +71,17 @@
 }
 @media screen and (max-width: 600px) {
   .card {
-    width: 100%;
+    width: 49%;
   }
   .card__head {
     img {
-      width: 120px;
+      width: 90px;
     }
+   
   }
-  
+  .button{
+    font-size: 12px;
+    line-height: 12px;
+    
+  }
 }
