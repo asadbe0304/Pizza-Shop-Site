@@ -5,9 +5,9 @@ import BTN from "./../../components/UI/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { modalCartClose } from "../../slice/auth";
 const index = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const hide = () => {
-    dispatch(modalCartClose())
+    dispatch(modalCartClose());
   };
   const { cart } = useSelector((state) => state.auth);
   return (
@@ -97,7 +97,6 @@ const index = () => {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
