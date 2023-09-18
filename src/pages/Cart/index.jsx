@@ -18,7 +18,7 @@ const index = () => {
           cart ? "flex animating" : "hidden"
         }`}
       >
-        <div className="icon-close absolute cart-close hover:bg-red-400  hover:scale-95 text-white rounded-full p-1  top-5 right-5">
+        <div className="icon-close absolute cart-close hover:scale-95 text-white rounded-full p-1  top-5 right-5">
           <MdClose onClick={hide} className="w-8 h-8  cursor-pointer" />
         </div>
         <div className="cart p-6 flex flex-col gap-3 items-center justify-between bg-black  h-full pt-10 xl:w-5/12 lg:w-8/12 md:w-8/12 sm:w-9/12 w-full rounded-xl ">
