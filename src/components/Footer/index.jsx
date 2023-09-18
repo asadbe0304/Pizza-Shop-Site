@@ -6,7 +6,7 @@ import "./index.scss";
 const index = () => {
   return (
     <>
-      <footer>
+      <footer className="mt-16">
         <div className="container">
           <div className="footer py-8 flex-col items-start">
             <div className="footer__top flex w-full justify-between ">
