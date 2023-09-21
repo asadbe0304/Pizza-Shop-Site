@@ -75,6 +75,7 @@ export default class PreviousNextMethods extends Component {
       dots: false,
       infinite: true,
       speed: 500,
+      autoplay: true,
       centerMode: true,
       slidesToShow: 5,
       slidesToScroll: 1,

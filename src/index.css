@@ -105,7 +105,13 @@
     /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
       url("./assets/fonts/mulish-v12-latin-900.svg") format("svg"); /* Legacy iOS */
 }
-
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -125,6 +131,6 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   max-width: 1440px;
 }
