@@ -108,28 +108,21 @@ export default class PreviousNextMethods extends Component {
         {
           breakpoint: 490,
           settings: {
-            centerMode:true,
+            centerMode: true,
             slidesToShow: 1.5,
           },
         },
         {
           breakpoint: 390,
           settings: {
-            centerMode:true,
-            slidesToShow: 1.3,
-          },
-        },
-        {
-          breakpoint: 350,
-          settings: {
-            centerMode:true,
-            slidesToShow: 1.1,
+            centerMode: true,
+            slidesToShow: 1,
           },
         },
         {
           breakpoint: 320,
           settings: {
-            centerMode:true,
+            centerMode: true,
             slidesToShow: 1,
           },
         },
