@@ -1,10 +1,9 @@
-import { Main, About } from "./../components";
+import "./index.scss";
 
 const index = () => {
   return (
     <>
-      <Main />
-      <About />
+      <h2 className="text-white">Profile</h2>
     </>
   );
 };
