@@ -6,9 +6,9 @@ import "./index.scss";
 const index = () => {
   return (
     <>
-      <footer className="pt-16">
+      <footer className="pt-1">
         <div className="container">
-          <div className="footer py-8 flex-col items-start">
+          <div className="footer py-4 flex-col items-start">
             <div className="footer__top flex w-full justify-between ">
               <div>
                 <Link to="/">

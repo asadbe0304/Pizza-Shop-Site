@@ -32,7 +32,7 @@ const index = () => {
     <>
       <header className={`w-full bg-black ${sticky}`}>
         <div className="container">
-          <div className="header flex  items-center justify-between w-full">
+          <div className="header bg-black flex  items-center justify-between w-full">
             <Logo />
             <Navbar />
             <div className="order__cart flex items-center gap-3">
