@@ -6,6 +6,9 @@ const index = () => {
     <>
       <div className="container">
         <div className="lg:flex-row mt-12 2xl:flex-row flex-col-reverse xl:flex-row md:flex-col items-center lg:flex xl:flex 2xl:flex  w-full">
+          <div className="about-right  w-full lg:w-1/2 2xl:w-1/2">
+            <img src={Img2} alt="about pizza images" width={450} />
+          </div>
           <div className="about-left w-full xl:w-1/2 lg:w-1/2 2xl:w-1/2">
             <div>
               <h4 className="about__left--title">About Us</h4>
@@ -24,9 +27,6 @@ const index = () => {
               hundreds of employees, smoothly performing work in order to
               receive / prepare / form / deliver customer orders on time.
             </div>
-          </div>
-          <div className="about-right  w-full lg:w-1/2 2xl:w-1/2">
-            <img src={Img2} alt="about pizza images" />
           </div>
         </div>
       </div>
