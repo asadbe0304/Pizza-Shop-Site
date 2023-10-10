@@ -1,6 +1,15 @@
 import BTN from "./Button";
 import Img from "./../../../public/images/piz.png";
-const Card = () => {
+import { useDispatch, } from "react-redux";
+import { addItem } from "../../slice/cartSlice";
+
+
+
+const Card = ({price}) => {
+
+  const addItems = ()=>{
+    useDispatch(addItem())
+  }
   return (
     <div className="card flex flex-col items-start">
       <div className="card__head ">
@@ -15,14 +24,14 @@ const Card = () => {
       <div className="card__footer flex items-center flex-col w-full">
         <div className="flex items-center justify-between w-full ">
           <strong className="text-white">
-            8,35 <sup>$</sup>
+            {price} <sup>$</sup>
           </strong>
           <div className="flex items-center justify-between gap-1">
             <button className="minus rounded-full flex items-center justify-center bg-orange-500 text-white px-2 py-0 border">
               -
             </button>
             <p className="text-white"> 1</p>
-            <button className="plus rounded-full flex items-center justify-center bg-orange-500 text-white px-2 py-0 border">
+            <button onClick={addItems} className="plus rounded-full flex items-center justify-center bg-orange-500 text-white px-2 py-0 border">
               +
             </button>
           </div>

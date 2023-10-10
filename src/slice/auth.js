@@ -19,7 +19,6 @@ export const authSlice = createSlice({
     },
     loginUserSuccess: (state) => {},
     loginUserFailure: (state) => {},
-
     // register
     registerUserStart: (state) => {
       state.isLoading = true;
