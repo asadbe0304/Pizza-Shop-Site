@@ -3,47 +3,18 @@ import Card from "../UI/Card";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { setProducts } from "../../slice/productSlice";
+import { loginUserStart } from "../../slice/auth";
 const MenuCard = () => {
-  const db = [
-    {
-      category: "All",
-    },
-    {
-      category: "Combo",
-    },
-    {
-      category: "Burger",
-    },
-    {
-      category: "Spinner",
-    },
-    {
-      category: "Chicken",
-    },
-    {
-      category: "Pizza",
-    },
-    {
-      category: "Drinks",
-    },
-    {
-      category: "Deserts",
-    },
-    {
-      category: "Salads",
-    },
-  ];
-
   const dispatch = useDispatch();
 
   const products = useSelector((state) => state.products);
-  console.log(products);
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
       .then((response) => {
         dispatch(setProducts(response.data));
         // console.log(response);
+        dispatch(loginUserStart());
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
@@ -53,7 +24,7 @@ const MenuCard = () => {
     <>
       {products
         ? products.map((e) => {
-            return <Card key={e.id} price={e.price}/>;
+            return <Card key={e.id} price={e.price} />;
           })
         : "loading ..."}
     </>
