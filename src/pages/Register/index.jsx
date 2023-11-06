@@ -4,7 +4,6 @@ import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
 
 const index = () => {
-
   return (
     <>
       <section className="2xl:pt-10 pt-16 lg:pt-10 bg-slate-200 dark:bg-gray-900">
@@ -47,7 +46,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                <Button text="Create an account" type={"submit"} />
+                  <Button text="Create an account" type={"submit"} />
                 </div>
 
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
