@@ -9,7 +9,9 @@ const Card = ({price}) => {
 
   const addItems = ()=>{
     useDispatch(addItem())
+
   }
+  console.log(addItem());
   return (
     <div className="card flex flex-col items-start">
       <div className="card__head ">
