@@ -27,6 +27,8 @@ const index = () => {
       windowHeight > 152 ? setSticky("sticky") : setSticky("");
     }
   };
+
+  // login button path /login hidden / shows
   const location = useLocation();
   const { pathname } = location;
   const isSignOrLogin = pathname.includes("/signup") || pathname.includes("/login");
