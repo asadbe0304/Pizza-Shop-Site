@@ -10,7 +10,7 @@ const RightSection = () => {
           src={Img}
           width={"450px"}
           height={"683px"}
-          className="desktop-img"
+          className="desktop-img "
           alt="hero pizza images"
         />
 

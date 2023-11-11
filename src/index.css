@@ -117,8 +117,7 @@ body {
   padding: 0;
   font-family: "Mulish", sans-serif;
   /* background-repeat: no-repeat; */
-  background-size: cover;
-  background: #0a0703;
+  /* background: #0a0703; */
   overflow-x: hidden;
   /* background-image: url(./assets/burger.png); */
   /* background-repeat: no-repeat; */

@@ -7,7 +7,7 @@ const index = () => {
     <>
       <div className="menu">
         <div className="menu_category">
-          <h3 className="text-white text-center mb-6 menu-title flex items-center justify-center ">
+          <h3 className="dark:text-white text-black text-center mb-6 menu-title flex items-center justify-center ">
             Menu
           </h3>
           <Category />

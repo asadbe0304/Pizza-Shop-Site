@@ -5,14 +5,12 @@ import Navbar from "./../Navbar";
 import { FiShoppingBag, FiMenu } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { modalMenu, modalCart } from "../../slice/auth";
+import { modalCart } from "../../slice/auth";
 import { useDispatch } from "react-redux";
 const index = () => {
   const [sticky, setSticky] = useState("");
   const dispatch = useDispatch();
-  const open = () => {
-    dispatch(modalMenu());
-  };
+
   const show = () => {
     dispatch(modalCart());
   };
@@ -31,13 +29,14 @@ const index = () => {
   // login button path /login hidden / shows
   const location = useLocation();
   const { pathname } = location;
-  const isSignOrLogin = pathname.includes("/signup") || pathname.includes("/login");
+  const isSignOrLogin =
+    pathname.includes("/signup") || pathname.includes("/login");
 
   return (
     <>
-      <header className={`w-full bg-black ${sticky}`}>
+      <header className={`w-full dark:bg-black  ${sticky}`}>
         <div className="container">
-          <div className="header bg-black flex  items-center justify-between w-full">
+          <div className="header bg-slate-200 dark:bg-black flex  items-center justify-between w-full">
             <Logo />
             <Navbar />
             <div className="order__cart flex items-center gap-3">
@@ -49,19 +48,16 @@ const index = () => {
               >
                 <Btn text={"Login"} />
               </Link>
-              <div onClick={show} className={`order__cart--link hover:scale-110 ${isSignOrLogin ? "hidden" : "hidde"}`}>
+              <div
+                onClick={show}
+                className={`order__cart--link hover:scale-110 ${
+                  isSignOrLogin ? "hidden" : "hidde"
+                }`}
+              >
                 <FiShoppingBag
                   width={"60px"}
                   height={"60px"}
-                  className="text-white"
-                />
-              </div>
-              <div className="order__cart--link ham__menu" onClick={open}>
-                <FiMenu
-                  width={"60px"}
-                  height={"60px"}
-                  onClick={open}
-                  className="text-white"
+                  className="text-white cursor-pointer"
                 />
               </div>
             </div>

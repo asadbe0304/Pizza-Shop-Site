@@ -3,7 +3,7 @@ const Logo = () => {
   return (
     <>
       <Link to={"/"}>
-        <h1 className="text-4xl  logo">Loook</h1>
+        <h1 className="text-4xl  logo">Pizza</h1>
       </Link>
     </>
   );

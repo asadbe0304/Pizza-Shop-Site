@@ -1,7 +1,7 @@
 
 const OutButton = ({text}) => {
   return (
-    <button className='outbutton'>
+    <button className='outbutton text-black dark:text-white dark:border border '>
       {text}
     </button>
   );

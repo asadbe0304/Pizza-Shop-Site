@@ -6,13 +6,13 @@ import "./index.scss";
 const index = () => {
   return (
     <>
-      <footer className="pt-1">
+      <footer className="pt-1 dark:bg-black bg-slate-200">
         <div className="container">
           <div className="footer py-4 flex-col items-start">
             <div className="footer__top flex w-full justify-between ">
               <div>
                 <Link to="/">
-                  <strong className="text-2xl logo">Loook</strong>
+                  <strong className="text-2xl logo">Pizza</strong>
                 </Link>
               </div>
               <ul className="xl:flex sm:flex md:flex lg:flex 2xl:flex gap-3 ">
@@ -60,7 +60,7 @@ const index = () => {
             </div>
             <div className="footer__bottom mt-4 xl:flex sm:flex md:flex lg:flex 2xl:flex justify-between items-center">
               <div>
-                <a className="text-white" href="tel:+998932502719">
+                <a className="text-black dark:text-white" href="tel:+998932502719">
                   +998 93 250 27 19
                 </a>
               </div>
