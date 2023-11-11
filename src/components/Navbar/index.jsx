@@ -1,4 +1,4 @@
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./index.scss";
 import { MdHome, MdEvent, MdGpsFixed, MdSwitchAccount } from "react-icons/md";
 const index = () => {
@@ -10,7 +10,11 @@ const index = () => {
         <li className="nav__item">
           <NavLink
             to={"/"}
-            className={({ isActive }) => (isActive ? "item__link " : "active")}
+            className={({ isActive }) =>
+              isActive
+                ? "item__link text-black dark:text-white "
+                : "text-black dark:text-white active"
+            }
           >
             <MdHome />
             Home
@@ -20,7 +24,11 @@ const index = () => {
         <li className="nav__item">
           <NavLink
             to={"/events"}
-            className={({ isActive }) => (isActive ? "item__link " : "active")}
+            className={({ isActive }) =>
+              isActive
+                ? "item__link text-black dark:text-white "
+                : "text-black dark:text-white active"
+            }
           >
             <MdEvent />
             Events
@@ -30,7 +38,11 @@ const index = () => {
         <li className="nav__item">
           <NavLink
             to={"/locations"}
-            className={({ isActive }) => (isActive ? "item__link " : "active")}
+            className={({ isActive }) =>
+              isActive
+                ? "item__link text-black dark:text-white "
+                : "text-black dark:text-white active"
+            }
           >
             <MdGpsFixed />
             Locations
@@ -39,7 +51,11 @@ const index = () => {
         <li className="nav__item login-mobile">
           <NavLink
             to={"/login"}
-            className={({ isActive }) => (isActive ? "item__link " : "active")}
+            className={({ isActive }) =>
+              isActive
+                ? "item__link text-black dark:text-white "
+                : "text-black dark:text-white active"
+            }
           >
             <MdSwitchAccount />
             Exit
