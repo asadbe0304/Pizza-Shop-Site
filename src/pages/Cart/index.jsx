@@ -11,6 +11,7 @@ const index = () => {
     dispatch(modalCartClose());
   };
   const { cart } = useSelector((state) => state.auth);
+
   return (
     <>
       <div
@@ -18,11 +19,14 @@ const index = () => {
           cart ? "flex animating" : "hidden"
         }`}
       >
-        <div className="icon-close  cart-close hover:scale-95 text-white rounded-full p-1  top-5 right-5">
-          <MdClose onClick={hide} className="w-8 h-8  cursor-pointer" />
-        </div>
         <div className="cart p-6 flex flex-col gap-3 items-center justify-between bg-black  h-full pt-10 xl:w-5/12 lg:w-8/12 md:w-8/12 sm:w-9/12 w-full rounded-xl ">
-          <h3 className="text-white">Orders</h3>
+          <div className="flex justify-between items-center w-full">
+            <h3 className="text-white">Orders</h3>
+            <MdClose
+              onClick={hide}
+              className="w-8 h-8 text-white  cursor-pointer"
+            />
+          </div>
           <CardProduct />
           <div className="card__footer w-full flex flex-col items-center justify-between">
             <div className="text-white flex w-full my-4 items-center justify-between">
