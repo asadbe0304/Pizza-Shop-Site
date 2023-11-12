@@ -1,4 +1,4 @@
-import Img from "./../../../public/images/hero.png";
+import Img from "./../../assets/hero.png";
 import Svg from "./../../../public/images/polygon-1.svg";
 import Svg2 from "./../../../public/images/elip.svg";
 import Img1 from "./../../../src/assets/laugh-wink.png";
@@ -30,7 +30,7 @@ const LeftSection = () => {
           if the courier is late - pizza is free!
         </p>
         <strong className="text-white process_title">Cooking Process:</strong>
-        <div className="cooking__process  relative">
+        <div className="cooking__process my-2  relative">
           <img
             src={Img}
             alt="Cooking process"
@@ -57,7 +57,7 @@ const LeftSection = () => {
         </div>
         <div className="btn_gruop">
           <Button text={"To Order"}></Button>
-          <BTN text={"Order"}></BTN>
+          <BTN text={"Delivery"}></BTN>
         </div>
       </div>
     </>
