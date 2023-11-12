@@ -684,6 +684,18 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -706,6 +718,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 @keyframes ping {
@@ -934,6 +950,26 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -976,6 +1012,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
