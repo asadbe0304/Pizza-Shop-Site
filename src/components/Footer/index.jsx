@@ -20,7 +20,7 @@ const index = () => {
                   <NavLink
                     to={"/"}
                     className={({ isActive }) =>
-                      isActive ? "item__link" : "active"
+                      isActive ? "item__link dark:text-white text-black" : "text-black dark:text-white active"
                     }
                   >
                     Home
@@ -30,7 +30,7 @@ const index = () => {
                   <NavLink
                     to={"/about"}
                     className={({ isActive }) =>
-                      isActive ? "item__link" : "active"
+                      isActive ? "item__link dark:text-white text-black" : "text-black dark:text-white active"
                     }
                   >
                     About
@@ -40,7 +40,7 @@ const index = () => {
                   <NavLink
                     to={"/events"}
                     className={({ isActive }) =>
-                      isActive ? "item__link" : "active"
+                      isActive ? "item__link dark:text-white text-black" : "text-black dark:text-white active"
                     }
                   >
                     Events
@@ -50,7 +50,7 @@ const index = () => {
                   <NavLink
                     to={"/vacansy"}
                     className={({ isActive }) =>
-                      isActive ? "item__link" : "active"
+                      isActive ? "item__link dark:text-white text-black" : "text-black dark:text-white active"
                     }
                   >
                     Vacansy

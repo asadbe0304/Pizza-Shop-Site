@@ -4,37 +4,39 @@ import Btn from "./../UI/Button";
 import Navbar from "./../Navbar";
 import { FiShoppingBag, FiMenu } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
 import { modalCart } from "../../slice/auth";
 import { useDispatch } from "react-redux";
+
 const index = () => {
-  const [sticky, setSticky] = useState("");
   const dispatch = useDispatch();
 
   const show = () => {
     dispatch(modalCart());
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-    return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 152 ? setSticky("sticky") : setSticky("");
-    }
-  };
-
-  // login button path /login hidden / shows
   const location = useLocation();
   const { pathname } = location;
   const isSignOrLogin =
     pathname.includes("/signup") || pathname.includes("/login");
 
+  // const [sticky, setSticky] = useState("");
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", stickNavbar);
+  //   return () => window.removeEventListener("scroll", stickNavbar);
+  // }, []);
+  // const stickNavbar = () => {
+  //   if (window !== undefined) {
+  //     let windowHeight = window.scrollY;
+  //     windowHeight > 152 ? setSticky("sticky") : setSticky("");
+  //   }
+  // };
+
+  // login button path /login hidden / shows
+
   return (
     <>
-      <header className={`w-full dark:bg-black  ${sticky}`}>
+      <header className={`w-full dark:bg-black `}>
         <div className="container">
           <div className="header bg-slate-200 dark:bg-black flex  items-center justify-between w-full">
             <Logo />

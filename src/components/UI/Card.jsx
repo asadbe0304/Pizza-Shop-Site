@@ -9,7 +9,7 @@ const Card = ({ price }) => {
   };
   console.log(addItem());
   return (
-    <div className="card dark:bg-slate-400 transition-all delay-300 hover:scale-105 hover:shadow-xl hover:cursor-pointer bg-slate-400 flex flex-col items-start">
+    <div className="card dark:bg-slate-900 transition-all delay-100 hover:scale-105 hover:shadow-xl hover:cursor-pointer bg-slate-400 flex flex-col items-start">
       <div className="card__head ">
         <img src={Img} className="card_img" alt="images" />
       </div>

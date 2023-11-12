@@ -1,32 +1,6 @@
 import Btn from "./../UI/OutButton";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { Component } from "react";
-
-// import Slider from "react-slick";
-// const Category = () => {
-//   const style = "bg-transparent ";
-//   const settings = {
-//     infinite: true,
-//     centerPadding: "60px",
-//     slidesToShow: 6,
-//     swipeToSlide: true,
-//   };
-
-//   return (
-//     <>
-//       <div className="flex items-center">
-//         <Slider className="overflow-hidden" {...settings}>
-//           {db.map((e) => {
-//             return <Btn text={e.category} style={style} key={e.category} />;
-//           })}
-//         </Slider>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Category;
-
 import Slider from "react-slick";
 
 export default class PreviousNextMethods extends Component {

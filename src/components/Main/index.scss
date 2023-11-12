@@ -2,10 +2,10 @@
   padding: 40px 0px;
 }
 .hero__inner {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
 }
 .hero__left {
   display: flex;
@@ -121,14 +121,12 @@
       }
     }
   }
-}
-@media screen and (max-width: 960px) {
   .hero__inner {
     flex-direction: column-reverse;
   }
   .mobile-img {
     display: block;
-    box-shadow: -15px 21px 68px 0px #6719003B;
+    box-shadow: -15px 21px 68px 0px #6719003b;
   }
   .desktop-img {
     display: none;
